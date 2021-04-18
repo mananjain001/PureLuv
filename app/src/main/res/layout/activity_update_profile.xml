@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.LoginSignup.UpdateProfile"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:padding="5dp"
+            android:onClick="back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="Update Profile"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Picture"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/profileselectorbutton"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_marginStart="20dp"
+            android:elevation="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbackground"
+            android:text="Choose File"
+            android:onClick="choosefile"
+            android:textColor="@color/white"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileimage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:onClick="changepicture"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/picture_desc"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/citytextview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/layoutbackground2"
+            android:gravity="center"
+            android:text=""
+            android:onClick="cityselection"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city_desc"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/layoutbackground2">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/UPBio"
+                android:hint="@string/bio"
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="@color/white"
+                app:endIconTint="@color/white"
+                app:endIconMode="clear_text"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/bioeditfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bio_desc"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbackground"
+            android:elevation="10dp"
+            android:onClick="save"
+            android:text="@string/save"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Common.LoginSignup.Signuplastpage"
+    android:padding="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/image8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/signup_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:onClick="back"
+            android:contentDescription="@string/back"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/signup_title_text"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/layoutbackground"
+            android:fontFamily="@font/muli_light_italic"
+            android:text="@string/create_account"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/layoutbackground">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scountry_code_picker"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showNameCode="true"
+            app:ccp_showFullName="true"
+            app:ccp_contentColor="@color/white"
+            app:ccpDialog_textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_phone_number"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/phone_number"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusBottomEnd="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/muli"
+                android:textColor="@color/white"
+                android:inputType="phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/signup_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_background"
+            android:onClick="callVerifyOTPScreen"
+            android:elevation="10dp"
+            android:text="@string/verify"
+            android:fontFamily="@font/muli"
+            android:layout_gravity="center"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</ScrollView>

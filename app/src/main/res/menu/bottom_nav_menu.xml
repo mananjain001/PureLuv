@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@id/bottom_nav_buy"
+        android:title="Shop"
+        android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+        app:cnb_backgroundColor ="@color/colorPrimary"/>
+    <item
+        android:id="@+id/bottom_nav_connect"
+        android:title="Connect"
+        android:icon="@drawable/ic_baseline_chat_24"
+        app:cnb_backgroundColor ="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/bottom_nav_match"
+        android:title="Match"
+        android:icon="@drawable/ic_baseline_match_24"
+        app:cnb_backgroundColor ="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/bottom_nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:cnb_backgroundColor ="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/bottom_nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        app:cnb_backgroundColor ="@color/colorPrimary" />
+
+
+</menu>

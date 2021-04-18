@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/loginsignupstartuppage"
+    android:padding="30dp"
+    tools:context=".Common.LoginSignup.LoginSignupStartupScreen">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image1"
+        android:layout_marginBottom="290dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layoutbackground"
+        android:orientation="vertical"
+        android:foregroundGravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/muli_light_italic"
+            android:gravity="center"
+            android:text="@string/Login_Signup_Startup1"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/muli_light_italic"
+            android:gravity="center"
+            android:text="@string/Login_Signup_Startup2"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:onClick="callLoginScreen"
+                android:text="@string/login"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:onClick="callSignupScreen"
+                android:text="@string/signup"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="@string/what_do_we_do"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>
